@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Your App Name</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="login-wrapper">
+        <section class="login-container" aria-labelledby="login-title">
+            
+            <!-- Header -->
+            <header class="login-header">
+                <h1 id="login-title" class="brand-title">Welcome Back</h1>
+                <p class="brand-subtitle">
+                    Sign in to continue to your account
+                </p>
+            </header>
+
+            <!-- Login Form -->
+            <form class="login-form" id="loginForm" novalidate>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email" class="form-label">Email address</label>
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        placeholder="name@company.com"
+                        autocomplete="email"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <div class="label-row">
+                        <label for="password" class="form-label">Password</label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+                    <input 
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-input"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+
+                <!-- Remember Me -->
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input 
+                            type="checkbox" 
+                            class="checkbox-input" 
+                            id="rememberMe"
+                            name="rememberMe"
+                        >
+                        <span class="checkbox-text">Remember me for 30 days</span>
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-loader" aria-hidden="true"></span>
+                </button>
+            </form>
+
+            <!-- Divider -->
+            <div class="divider" role="separator" aria-label="or continue with">
+                <span class="divider-text">or continue with</span>
+            </div>
+
+            <!-- Social Buttons -->
+            <div class="social-buttons">
+                <button type="button" class="social-btn social-btn-google">
+                    <img 
+                        src="img/google.png" 
+                        class="social-icon" 
+                        alt="Google logo"
+                    >
+                    <span>Google</span>
+                </button>
+                <button type="button" class="social-btn social-btn-github">
+                    <img 
+                        src="img/github.png" 
+                        class="social-icon" 
+                        alt="GitHub logo"
+                    >
+                    <span>GitHub</span>
+                </button>
+            </div>
+
+            <!-- Signup Text -->
+            <p class="signup-text">
+                Don’t have an account?
+                <a href="#" class="signup-link">Sign up</a>
+            </p>
+
+        </section>
+    </main>
+
+    <script src="js/custom.js"></script>
+</body>
+</html>
